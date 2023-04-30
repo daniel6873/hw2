@@ -95,10 +95,6 @@ studio1 = Studio.new
 studio1["name"]="Warner Bros."
 studio1.save
 
-puts ""
-puts studio1.inspect
-puts ""
-
 movie1 = Movie.new
 movie1["title"]="Batman Begins"
 movie1["year_released"]=2005
@@ -120,9 +116,6 @@ movie3["rated"]="PG-13"
 movie3["Studio_ID"]=studio1.id
 movie3.save
 
-puts movie1.inspect
-puts movie2.inspect
-puts movie3.inspect
 
 #Batman Begins Actors
 
@@ -275,6 +268,21 @@ role15.save
 puts "Movies"
 puts "======"
 puts ""
+
+movieindex=0
+moviearray = [movie1,movie2,movie3]
+loop do
+    if movieindex==3
+        break
+    end
+
+    movietitle=moviearray[movieindex].title
+    puts "#{movietitle}"
+
+    movieindex=movieindex + 1
+
+end
+
 
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
