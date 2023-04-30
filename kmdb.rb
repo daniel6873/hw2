@@ -124,6 +124,60 @@ puts movie1.inspect
 puts movie2.inspect
 puts movie3.inspect
 
+#Batman Begins Actors
+
+actor1 = Actor.new
+actor1["name"]="Christian Bale"
+actor1.save
+
+actor2 = Actor.new
+actor2["name"]="Michael Caine"
+actor2.save
+
+actor3 = Actor.new
+actor3["name"]="Liam Neeson"
+actor3.save
+
+actor4 = Actor.new
+actor4["name"]="Katie Holmes"
+actor4.save
+
+actor5 = Actor.new
+actor5["name"]="Gary Oldman"
+actor5.save
+
+#Batman Begins Roles
+
+role1 = Role.new
+role1["Movie_ID"]=movie1.id
+role1["Actor_ID"]=actor1.id
+role1["Character_Name"]="Bruce Wayne"
+role1.save
+
+role2 = Role.new
+role2["Movie_ID"]=movie1.id
+role2["Actor_ID"]=actor2.id
+role2["Character_Name"]="Alfred"
+role2.save
+
+role3 = Role.new
+role3["Movie_ID"]=movie1.id
+role3["Actor_ID"]=actor3.id
+role3["Character_Name"]="Ra's Al Ghul"
+role3.save
+
+role4 = Role.new
+role4["Movie_ID"]=movie1.id
+role4["Actor_ID"]=actor4.id
+role4["Character_Name"]="Rachel Dawes"
+role4.save
+
+role5 = Role.new
+role5["Movie_ID"]=movie1.id
+role5["Actor_ID"]=actor5.id
+role5["Character_Name"]="Commissioner Gordon"
+role5.save
+
 
 
 # Prints a header for the movies output
