@@ -84,6 +84,12 @@ puts "Roles: #{Role.all.count}"
 # Generate models and tables, according to the domain model.
 # TODO!
 
+studio1 = Studio.new
+
+puts ""
+puts studio1.inspect
+puts ""
+
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
