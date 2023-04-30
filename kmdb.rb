@@ -178,6 +178,97 @@ role5["Actor_ID"]=actor5.id
 role5["Character_Name"]="Commissioner Gordon"
 role5.save
 
+#The Dark Knight Actors Included
+
+actor6 = Actor.new
+actor6["name"]="Heath Ledger"
+actor6.save
+
+actor7 = Actor.new
+actor7["name"]="Aaron Eckhart"
+actor7.save
+
+actor8 = Actor.new
+actor8["name"]="Maggie Gyllenhaal"
+actor8.save
+
+#The Dark Knight roles
+
+role6 = Role.new
+role6["Movie_ID"]=movie2.id
+role6["Actor_ID"]=actor1.id
+role6["Character_Name"]=role1.Character_Name
+role6.save
+
+role7 = Role.new
+role7["Movie_ID"]=movie2.id
+role7["Actor_ID"]=actor6.id
+role7["Character_Name"]="Joker"
+role7.save
+
+role8 = Role.new
+role8["Movie_ID"]=movie2.id
+role8["Actor_ID"]=actor7.id
+role8["Character_Name"]="Harvey Dent"
+role8.save
+
+role9 = Role.new
+role9["Movie_ID"]=movie2.id
+role9["Actor_ID"]=actor2.id
+role9["Character_Name"]=role2.Character_Name
+role9.save
+
+role10 = Role.new
+role10["Movie_ID"]=movie2.id
+role10["Actor_ID"]=actor8.id
+role10["Character_Name"]="Rachel Dawes"
+role10.save
+
+#The Dark Knight Rises Actors
+
+actor9 = Actor.new
+actor9["name"]="Tom Hardy"
+actor9.save
+
+actor10 = Actor.new
+actor10["name"]="Joseph Gordon-Levitt"
+actor10.save
+
+actor11 = Actor.new
+actor11["name"]="Anne Hathaway"
+actor11.save
+
+#The Dark Knight Rises Roles List
+
+role11 = Role.new
+role11["Movie_ID"]=movie3.id
+role11["Actor_ID"]=actor1.id
+role11["Character_Name"]=role1.Character_Name
+role11.save
+
+role12 = Role.new
+role12["Movie_ID"]=movie3.id
+role12["Actor_ID"]=actor5.id
+role12["Character_Name"]=role5.Character_Name
+role12.save
+
+role13 = Role.new
+role13["Movie_ID"]=movie3.id
+role13["Actor_ID"]=actor9.id
+role13["Character_Name"]="Bane"
+role13.save
+
+role14 = Role.new
+role14["Movie_ID"]=movie3.id
+role14["Actor_ID"]=actor10.id
+role14["Character_Name"]="John Blake"
+role14.save
+
+role15 = Role.new
+role15["Movie_ID"]=movie3.id
+role15["Actor_ID"]=actor11.id
+role15["Character_Name"]="Selina Kyle"
+role15.save
 
 
 # Prints a header for the movies output
