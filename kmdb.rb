@@ -71,6 +71,16 @@
 # Use `Model.destroy_all` code.
 # TODO!
 
+Studio.destroy_all
+Movie.destroy_all
+Actor.destroy_all
+Role.destroy_all
+
+puts "Studios: #{Studio.all.count}"
+puts "Movies: #{Movie.all.count}"
+puts "Actors: #{Actor.all.count}"
+puts "Roles: #{Role.all.count}"
+
 # Generate models and tables, according to the domain model.
 # TODO!
 
