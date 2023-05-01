@@ -269,23 +269,30 @@ puts "Movies"
 puts "======"
 puts ""
 
-movieindex=0
 moviearray = [movie1,movie2,movie3]
-loop do
-    if movieindex==3
-        break
-    end
-
-    movietitle=moviearray[movieindex].title
-    puts "#{movietitle}"
-
-    movieindex=movieindex + 1
-
-end
 
 
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
+
+puts ""
+puts "Top Movies"
+puts "========"
+puts ""
+
+tracker1 = 0
+loop do
+    if tracker1 == 3
+        break
+    end
+
+    puts "#{moviearray[tracker1].title} | #{moviearray[tracker1].year_released} | #{moviearray[tracker1].rated} | #{moviearray[tracker1].Studio_ID}"
+    
+    tracker1=tracker1+1
+
+end 
+
+
 
 # Prints a header for the cast output
 puts ""
