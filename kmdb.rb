@@ -302,3 +302,29 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
+
+character_array = []
+tracker2 = 1
+loop do
+    if tracker2 == 16
+        break
+    end
+    
+    character_array.insert(tracker2-1,"")
+
+end
+
+puts character_array.length
+
+tracker2 = 1
+
+loop do
+    if tracker2 ==16
+        break
+    end
+
+
+    tracker2 = tracker2 + 1
+
+end
+
