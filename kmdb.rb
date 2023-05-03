@@ -303,28 +303,29 @@ puts ""
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
 
-character_array = []
-tracker2 = 1
-loop do
-    if tracker2 == 16
+castarray = [role1,role2,role3,role4,role5,role6,role7,role8,role9,role10,role11,role12,role13,role14,role15]
+
+
+
+counter = 0
+loop do 
+    if counter == 15
         break
-    end
+    end 
     
-    character_array.insert(tracker2-1,"")
+    loop_movieid_1 = castarray[counter].Movie_ID
+    loop_actorid_1 = castarray[counter].Actor_ID
+    loop_character_id_1 = castarray[counter].Character_Name
 
-end
+    movie_name_output = Movie.find(loop_movieid_1)
+    movie_name_output_1=movie_name_output.title
+    
+    actor_name_output = Actor.find(loop_actorid_1)
+    actor_name_output_1=actor_name_output.name
+    
+    puts "#{movie_name_output_1} | #{actor_name_output_1} | #{loop_character_id_1} "
+    
+    counter = counter + 1
 
-puts character_array.length
-
-tracker2 = 1
-
-loop do
-    if tracker2 ==16
-        break
-    end
-
-
-    tracker2 = tracker2 + 1
-
-end
+end 
 
